@@ -449,9 +449,11 @@ install
 
 # Tools
 tools/ImageCropper/**/*.png
+.nicegui/storage-general.json
 
 config
 debug
 
 # Trae
 .trae/
+
