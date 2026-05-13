@@ -1,0 +1,47 @@
+{
+    "收获经营管理": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "经营管理.png",
+            "经营管理2.png"
+        ],
+        "threshold": 0.7,
+        "action": "Click",
+        "roi": [
+            82,
+            88,
+            268,
+            176
+        ],
+        "target": true,
+        "next": [
+            "点击一键获得"
+        ]
+    },
+    "点击一键获得": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            745,
+            518
+        ],
+        "repeat": 3,
+        "repeat_delay": 400,
+        "post_delay": 1000,
+        "next": [
+            "点击取消"
+        ]
+    },
+    "点击取消": {
+        "recognition": "OCR",
+        "expected": "取消",
+        "action": "Click",
+        "target": true,
+        "timeout": 2000,
+        "max_hit": 8,
+        "next": [
+            "点击取消"
+        ],
+        "on_error": []
+    }
+}
