@@ -1,0 +1,14 @@
+{
+    "进入街机游戏": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            295,
+            208
+        ],
+        "post_wait_freezes": 2000,
+        "next": [
+            "左上角返回主页面"
+        ]
+    }
+}

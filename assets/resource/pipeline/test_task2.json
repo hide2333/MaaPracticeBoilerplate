@@ -1,0 +1,50 @@
+{
+    "进入我的小屋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            130,
+            125
+        ],
+        "post_wait_freezes": 2000,
+        "next": [
+            "点击参观按钮"
+        ]
+    },
+    "点击参观按钮": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            138,
+            198
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+           "点击随机"
+        ]
+    },
+    "点击随机": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            211,
+            175
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点赞"
+        ]
+    },
+    "点赞": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1146,
+            98
+        ],
+        "post_wait_freezes": 500,
+        "next": [
+           "左上角返回主页面"
+        ]
+    }
+}

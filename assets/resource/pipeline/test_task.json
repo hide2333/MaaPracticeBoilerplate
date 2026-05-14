@@ -1,19 +1,12 @@
 {
     "收获经营管理": {
-        "recognition": "TemplateMatch",
-        "template": [
-            "经营管理.png",
-            "经营管理2.png"
-        ],
-        "threshold": 0.7,
+        "recognition": "DirectHit",
         "action": "Click",
-        "roi": [
-            82,
-            88,
-            268,
-            176
+        "target": [
+            130,
+            206
         ],
-        "target": true,
+        "post_wait_freezes": 500,
         "next": [
             "点击一键获得"
         ]
@@ -27,7 +20,7 @@
         ],
         "repeat": 3,
         "repeat_delay": 400,
-        "post_delay": 1000,
+        "post_delay": 500,
         "next": [
             "点击取消"
         ]
