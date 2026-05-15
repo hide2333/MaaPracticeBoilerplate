@@ -21,10 +21,10 @@
         "repeat": 3,
         "repeat_delay": 500,
         "next": [
-            "左上角返回主页面"
+            "点击左上角返回"
         ]
     },
-    "左上角返回主页面": {
+    "点击左上角返回": {
         "recognition": "DirectHit",
         "action": "Click",
         "target": [
