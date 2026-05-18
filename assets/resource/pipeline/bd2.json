@@ -1,0 +1,253 @@
+{
+    "点击经营管理": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            130,
+            206
+        ],
+        "post_wait_freezes": 500,
+        "next": [
+            "点击一键获得"
+        ]
+    },
+    "点击一键获得": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            745,
+            518
+        ],
+        "repeat": 3,
+        "repeat_delay": 400,
+        "post_delay": 500,
+        "next": [
+            "点击取消"
+        ]
+    },
+    "点击取消": {
+        "recognition": "OCR",
+        "expected": "取消",
+        "action": "Click",
+        "target": true,
+        "timeout": 2000,
+        "max_hit": 8,
+        "next": [
+            "点击取消"
+        ],
+        "on_error": []
+    },
+    "进入公会": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            296,
+            121
+        ],
+        "post_wait_freezes": 2000,
+        "next": [
+            "退出奖励界面"
+        ]
+    },
+    "退出奖励界面": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            924,
+            555
+        ],
+        "repeat": 3,
+        "repeat_delay": 500,
+        "next": [
+            "点击左上角返回"
+        ]
+    },
+    "点击左上角返回": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            91,
+            37
+        ],
+        "post_wait_freezes": 500,
+        "next": []
+    },
+    "进入我的小屋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            130,
+            125
+        ],
+        "post_wait_freezes": 2000,
+        "next": [
+            "点击参观按钮"
+        ]
+    },
+    "点击参观按钮": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            138,
+            198
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击随机"
+        ]
+    },
+    "点击随机": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            211,
+            175
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点赞"
+        ]
+    },
+    "点赞": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1146,
+            98
+        ],
+        "post_wait_freezes": 500,
+        "next": [
+            "点击左上角返回"
+        ]
+    },
+    "进入街机游戏": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            295,
+            208
+        ],
+        "post_wait_freezes": 2000,
+        "next": [
+            "点击左上角返回"
+        ]
+    },
+    "进入抽抽乐": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            128,
+            643
+        ],
+        "post_wait_freezes": 500,
+        "next": [
+            "点击所有免费抽抽乐"
+        ]
+    },
+    "点击所有免费抽抽乐": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            279,
+            628
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击确认"
+        ]
+    },
+    "点击确认": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            706,
+            443
+        ],
+        "next": [
+            "点击跳过抽卡动画"
+        ]
+    },
+    "点击跳过抽卡动画": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1162,
+            47
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击左上角返回1"
+        ]
+    },
+    "点击左上角返回1": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            50,
+            50
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击装备抽取界面"
+        ]
+    },
+    "点击装备抽取界面": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            140,
+            270
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击所有免费抽抽乐1"
+        ]
+    },
+    "点击所有免费抽抽乐1": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            279,
+            628
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击确认1"
+        ]
+    },
+    "点击确认1": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            706,
+            443
+        ],
+        "next": [
+            "点击跳过抽卡动画1"
+        ]
+    },
+    "点击跳过抽卡动画1": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1162,
+            47
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击左上角返回2"
+        ]
+    },
+    "点击左上角返回2": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            50,
+            50
+        ],
+        "post_wait_freezes": 1000,
+        "next": [
+            "点击左上角返回"
+        ]
+    }
+}
