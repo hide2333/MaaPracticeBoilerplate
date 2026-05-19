@@ -1,275 +1,671 @@
 {
-    "开始任务": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
+    "$__mpe_config_bd2_task": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 25,
+                "y": -81,
+                "zoom": 0.75
+            },
+            "filename": "bd2_task",
+            "version": "v1.5.3"
+        }
+    },
+    "进入游戏卡带界面": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1114,
+                    654,
+                    1,
+                    1
+                ]
+            }
+        },
         "next": [
-            "[JumpBack]点击经营管理",
-            "[JumpBack]进入公会",
-            "[JumpBack]进入我的小屋",
-            "[JumpBack]进入街机游戏",
-            "[JumpBack]进入抽抽乐"
-        ]
+            "下滑游戏卡带界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 335
+            }
+        }
+    },
+    "下滑游戏卡带界面": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    44,
+                    353,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        44,
+                        182,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "进入格鲁菲餐厅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 320
+            }
+        }
+    },
+    "进入格鲁菲餐厅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "glupy_dinner.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "点击常客"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 307
+            }
+        }
+    },
+    "日常-格鲁菲餐厅": {
+        "next": [
+            "进入游戏卡带界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 350
+            }
+        }
+    },
+    "点击常客": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    136,
+                    228,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "从餐厅返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 335
+            }
+        }
+    },
+    "从餐厅返回": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1184,
+                    48,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 307
+            }
+        }
+    },
+    "日常-经营管理": {
+        "next": [
+            "点击经营管理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 993
+            }
+        }
+    },
+    "日常-公会": {
+        "next": [
+            "进入公会"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 554
+            }
+        }
+    },
+    "日常-小屋": {
+        "next": [
+            "进入我的小屋"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 743
+            }
+        }
+    },
+    "日常-抽抽乐": {
+        "next": [
+            "进入抽抽乐"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 73
+            }
+        }
+    },
+    "周长-街机游戏": {
+        "next": [
+            "进入街机游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1182
+            }
+        }
+    },
+    "开始任务": {
+        "next": [
+            "[JumpBack]日常-经营管理",
+            "[JumpBack]日常-格鲁菲餐厅",
+            "[JumpBack]周长-街机游戏",
+            "[JumpBack]日常-公会",
+            "[JumpBack]日常-小屋",
+            "[JumpBack]日常-抽抽乐"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 562
+            }
+        }
     },
     "点击经营管理": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            130,
-            206
-        ],
         "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    130,
+                    206
+                ]
+            }
+        },
         "post_wait_freezes": 500,
         "next": [
             "点击一键获得"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 932
+            }
+        }
     },
     "点击一键获得": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            745,
-            518
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    745,
+                    518
+                ]
+            }
+        },
         "repeat": 3,
         "repeat_delay": 400,
         "post_delay": 500,
         "next": [
             "点击取消"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 916
+            }
+        }
     },
     "点击取消": {
-        "recognition": "OCR",
-        "expected": "取消",
-        "action": "Click",
-        "target": true,
-        "timeout": 2000,
         "max_hit": 8,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "取消"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "timeout": 2000,
         "next": [
             "点击取消",
             "经营管理完成"
         ],
-        "on_error": []
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 916
+            }
+        }
     },
     "经营管理完成": {
-        "recognition": "DirectHit",
-        "action": "DoNothing",
-        "next": []
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 993
+            }
+        }
     },
     "进入公会": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            296,
-            121
-        ],
         "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    296,
+                    121
+                ]
+            }
+        },
         "post_wait_freezes": 2000,
         "next": [
             "退出奖励界面"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 526
+            }
+        }
     },
     "退出奖励界面": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            924,
-            555
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    924,
+                    555
+                ]
+            }
+        },
         "repeat": 3,
         "repeat_delay": 500,
         "next": [
             "点击左上角返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 526
+            }
+        }
     },
     "点击左上角返回": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            91,
-            37
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    91,
+                    37
+                ]
+            }
+        },
         "post_wait_freezes": 500,
-        "next": []
+        "$__mpe_code": {
+            "position": {
+                "x": 3852,
+                "y": 562
+            }
+        }
     },
     "进入我的小屋": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            130,
-            125
-        ],
         "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    130,
+                    125
+                ]
+            }
+        },
         "post_wait_freezes": 2000,
         "next": [
             "点击参观按钮"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 605
+            }
+        }
     },
     "点击参观按钮": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            138,
-            198
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    138,
+                    198
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击随机"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 627
+            }
+        }
     },
     "点击随机": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            211,
-            175
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    211,
+                    175
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点赞"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 667
+            }
+        }
     },
     "点赞": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1146,
-            98
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1146,
+                    98
+                ]
+            }
+        },
         "post_wait_freezes": 500,
         "next": [
             "点击左上角返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 653
+            }
+        }
     },
     "进入街机游戏": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            295,
-            208
-        ],
         "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    295,
+                    208
+                ]
+            }
+        },
         "post_wait_freezes": 2000,
         "next": [
             "点击左上角返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 1073
+            }
+        }
     },
     "进入抽抽乐": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            128,
-            643
-        ],
         "max_hit": 1,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    128,
+                    643
+                ]
+            }
+        },
         "post_wait_freezes": 500,
         "next": [
             "点击所有免费抽抽乐"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 12
+            }
+        }
     },
     "点击所有免费抽抽乐": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            279,
-            628
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    279,
+                    628
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击确认"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 28
+            }
+        }
     },
     "点击确认": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            706,
-            443
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    706,
+                    443
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
         "next": [
             "点击跳过抽卡动画"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1292,
+                "y": 28
+            }
+        }
     },
     "点击跳过抽卡动画": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1162,
-            47
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1162,
+                    47
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击左上角返回1"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 28
+            }
+        }
     },
     "点击左上角返回1": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            50,
-            50
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    50,
+                    50
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击装备抽取界面"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 28
+            }
+        }
     },
     "点击装备抽取界面": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            140,
-            270
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    140,
+                    270
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击所有免费抽抽乐1"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2252,
+                "y": 28
+            }
+        }
     },
     "点击所有免费抽抽乐1": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            279,
-            628
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    279,
+                    628
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击确认1"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2572,
+                "y": 28
+            }
+        }
     },
     "点击确认1": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            706,
-            443
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    706,
+                    443
+                ]
+            }
+        },
+        "post_wait_freezes": 1000,
         "next": [
             "点击跳过抽卡动画1"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 28
+            }
+        }
     },
     "点击跳过抽卡动画1": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1162,
-            47
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1162,
+                    47
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击左上角返回2"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3212,
+                "y": 28
+            }
+        }
     },
     "点击左上角返回2": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            50,
-            50
-        ],
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    50,
+                    50
+                ]
+            }
+        },
         "post_wait_freezes": 1000,
         "next": [
             "点击左上角返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3532,
+                "y": 28
+            }
+        }
     }
 }
