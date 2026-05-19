@@ -1,4 +1,15 @@
 {
+    "开始任务": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "[JumpBack]点击经营管理",
+            "[JumpBack]进入公会",
+            "[JumpBack]进入我的小屋",
+            "[JumpBack]进入街机游戏",
+            "[JumpBack]进入抽抽乐"
+        ]
+    },
     "点击经营管理": {
         "recognition": "DirectHit",
         "action": "Click",
@@ -6,6 +17,7 @@
             130,
             206
         ],
+        "max_hit": 1,
         "post_wait_freezes": 500,
         "next": [
             "点击一键获得"
@@ -33,9 +45,15 @@
         "timeout": 2000,
         "max_hit": 8,
         "next": [
-            "点击取消"
+            "点击取消",
+            "经营管理完成"
         ],
         "on_error": []
+    },
+    "经营管理完成": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": []
     },
     "进入公会": {
         "recognition": "DirectHit",
@@ -44,6 +62,7 @@
             296,
             121
         ],
+        "max_hit": 1,
         "post_wait_freezes": 2000,
         "next": [
             "退出奖励界面"
@@ -79,6 +98,7 @@
             130,
             125
         ],
+        "max_hit": 1,
         "post_wait_freezes": 2000,
         "next": [
             "点击参观按钮"
@@ -127,6 +147,7 @@
             295,
             208
         ],
+        "max_hit": 1,
         "post_wait_freezes": 2000,
         "next": [
             "点击左上角返回"
@@ -139,6 +160,7 @@
             128,
             643
         ],
+        "max_hit": 1,
         "post_wait_freezes": 500,
         "next": [
             "点击所有免费抽抽乐"
