@@ -4,15 +4,309 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": 25,
-                "y": -81,
-                "zoom": 0.75
+                "x": -260,
+                "y": 363,
+                "zoom": 0.86
             },
             "filename": "bd2_task",
             "version": "v1.5.3"
         }
     },
+    "日常-快速狩猎": {
+        "max_hit": 1,
+        "next": [
+            "进入快速狩猎"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 480,
+                "y": -282
+            }
+        }
+    },
+    "进入快速狩猎": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1154,
+                    213,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击金币"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 851,
+                "y": -279
+            }
+        }
+    },
+    "点击金币": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    140,
+                    205,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "点击快速狩猎"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1158,
+                "y": -293
+            }
+        }
+    },
+    "点击快速狩猎": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1060,
+                    651,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击+10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1470,
+                "y": -283
+            }
+        }
+    },
+    "点击+10": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    691,
+                    335,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击狩猎饭团"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1740,
+                "y": -283
+            }
+        }
+    },
+    "点击狩猎饭团": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    711,
+                    561,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击跳过结算"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2036,
+                "y": -287
+            }
+        }
+    },
+    "点击跳过结算": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    672,
+                    572,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "点击圣石洞穴"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2358,
+                "y": -296
+            }
+        }
+    },
+    "点击圣石洞穴": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    144,
+                    361,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "点击水之洞穴"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2669,
+                "y": -305
+            }
+        }
+    },
+    "点击水之洞穴": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    229,
+                    180,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "点击快速狩猎1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2959,
+                "y": -287
+            }
+        }
+    },
+    "点击快速狩猎1": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1071,
+                    653,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击+10a "
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3247,
+                "y": -252
+            }
+        }
+    },
+    "点击+10a ": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    696,
+                    337,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击狩猎火把"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3560,
+                "y": -260
+            }
+        }
+    },
+    "点击跳过结算1": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    613,
+                    667,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 3,
+        "next": [
+            "点击左上角返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4119,
+                "y": -265
+            }
+        }
+    },
+    "点击狩猎火把": {
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    716,
+                    557,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "点击跳过结算1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3819,
+                "y": -258
+            }
+        }
+    },
     "进入游戏卡带界面": {
+        "max_hit": 1,
         "action": {
             "type": "Click",
             "param": {
@@ -24,13 +318,14 @@
                 ]
             }
         },
+        "post_delay": 3000,
         "next": [
             "下滑游戏卡带界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 652,
-                "y": 335
+                "x": 666,
+                "y": 321
             }
         }
     },
@@ -54,6 +349,7 @@
                 ]
             }
         },
+        "post_delay": 3000,
         "next": [
             "进入格鲁菲餐厅"
         ],
@@ -73,8 +369,17 @@
                 ]
             }
         },
+        "pre_delay": 3000,
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    24,
+                    24,
+                    -70,
+                    -48
+                ]
+            }
         },
         "next": [
             "点击常客"
@@ -87,6 +392,7 @@
         }
     },
     "日常-格鲁菲餐厅": {
+        "max_hit": 1,
         "next": [
             "进入游戏卡带界面"
         ],
@@ -98,6 +404,7 @@
         }
     },
     "点击常客": {
+        "pre_delay": 10000,
         "action": {
             "type": "Click",
             "param": {
@@ -120,6 +427,7 @@
         }
     },
     "从餐厅返回": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -133,12 +441,13 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 307
+                "x": 1944,
+                "y": 295
             }
         }
     },
     "日常-经营管理": {
+        "max_hit": 1,
         "next": [
             "点击经营管理"
         ],
@@ -150,6 +459,7 @@
         }
     },
     "日常-公会": {
+        "max_hit": 1,
         "next": [
             "进入公会"
         ],
@@ -161,6 +471,7 @@
         }
     },
     "日常-小屋": {
+        "max_hit": 1,
         "next": [
             "进入我的小屋"
         ],
@@ -172,6 +483,7 @@
         }
     },
     "日常-抽抽乐": {
+        "max_hit": 1,
         "next": [
             "进入抽抽乐"
         ],
@@ -183,6 +495,7 @@
         }
     },
     "周长-街机游戏": {
+        "max_hit": 1,
         "next": [
             "进入街机游戏"
         ],
@@ -200,17 +513,19 @@
             "[JumpBack]周长-街机游戏",
             "[JumpBack]日常-公会",
             "[JumpBack]日常-小屋",
-            "[JumpBack]日常-抽抽乐"
+            "[JumpBack]日常-抽抽乐",
+            "[JumpBack]日常-快速狩猎"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 562
+                "x": -209,
+                "y": 549
             }
         }
     },
     "点击经营管理": {
         "max_hit": 1,
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -220,7 +535,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 500,
         "next": [
             "点击一键获得"
         ],
@@ -269,10 +583,6 @@
             }
         },
         "timeout": 2000,
-        "next": [
-            "点击取消",
-            "经营管理完成"
-        ],
         "$__mpe_code": {
             "position": {
                 "x": 1292,
@@ -280,16 +590,9 @@
             }
         }
     },
-    "经营管理完成": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1612,
-                "y": 993
-            }
-        }
-    },
     "进入公会": {
         "max_hit": 1,
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -299,14 +602,13 @@
                 ]
             }
         },
-        "post_wait_freezes": 2000,
         "next": [
             "退出奖励界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1932,
-                "y": 526
+                "x": 1945,
+                "y": 520
             }
         }
     },
@@ -333,6 +635,7 @@
         }
     },
     "点击左上角返回": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -342,7 +645,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 500,
         "$__mpe_code": {
             "position": {
                 "x": 3852,
@@ -352,6 +654,7 @@
     },
     "进入我的小屋": {
         "max_hit": 1,
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -361,18 +664,18 @@
                 ]
             }
         },
-        "post_wait_freezes": 2000,
         "next": [
             "点击参观按钮"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 972,
-                "y": 605
+                "x": 977,
+                "y": 638
             }
         }
     },
     "点击参观按钮": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -382,7 +685,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击随机"
         ],
@@ -394,6 +696,7 @@
         }
     },
     "点击随机": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -403,7 +706,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点赞"
         ],
@@ -415,6 +717,7 @@
         }
     },
     "点赞": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -424,7 +727,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 500,
         "next": [
             "点击左上角返回"
         ],
@@ -437,6 +739,7 @@
     },
     "进入街机游戏": {
         "max_hit": 1,
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -446,7 +749,8 @@
                 ]
             }
         },
-        "post_wait_freezes": 2000,
+        "repeat": 3,
+        "repeat_delay": 200,
         "next": [
             "点击左上角返回"
         ],
@@ -459,6 +763,7 @@
     },
     "进入抽抽乐": {
         "max_hit": 1,
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -468,7 +773,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 500,
         "next": [
             "点击所有免费抽抽乐"
         ],
@@ -480,6 +784,7 @@
         }
     },
     "点击所有免费抽抽乐": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -489,7 +794,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击确认"
         ],
@@ -501,6 +805,7 @@
         }
     },
     "点击确认": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -510,7 +815,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击跳过抽卡动画"
         ],
@@ -522,6 +826,7 @@
         }
     },
     "点击跳过抽卡动画": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -531,7 +836,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击左上角返回1"
         ],
@@ -543,6 +847,7 @@
         }
     },
     "点击左上角返回1": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -552,7 +857,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击装备抽取界面"
         ],
@@ -564,6 +868,7 @@
         }
     },
     "点击装备抽取界面": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -573,7 +878,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击所有免费抽抽乐1"
         ],
@@ -585,6 +889,7 @@
         }
     },
     "点击所有免费抽抽乐1": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -594,7 +899,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击确认1"
         ],
@@ -606,6 +910,7 @@
         }
     },
     "点击确认1": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -615,7 +920,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击跳过抽卡动画1"
         ],
@@ -627,6 +931,7 @@
         }
     },
     "点击跳过抽卡动画1": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -636,7 +941,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击左上角返回2"
         ],
@@ -648,6 +952,7 @@
         }
     },
     "点击左上角返回2": {
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -657,7 +962,6 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
         "next": [
             "点击左上角返回"
         ],
